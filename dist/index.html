@@ -1,0 +1,35 @@
+<!doctype html>
+<html class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
+    <title>monster</title>
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+    <link rel="stylesheet" href="styles/vendor.css">
+
+    <link rel="stylesheet" href="styles/main.css">
+
+    <script src="scripts/vendor/modernizr.js"></script>
+  </head>
+  <body>
+
+    <div class="hero-unit">
+    <h1>List of Dislikes</h1>
+    <ul></ul>
+    </div>
+    
+
+    <script type="text/template" id="monster_list">
+    <% everyone.each(function(person){ %>
+        <li>Hi, my name is <%=person.get('name')%>. I absolutely dislike <%=person.get('thing')%>. I would not touch it with a 10 foot <%=person.get('item')%>.
+        </li>    
+        <% }) %>
+    </script>
+
+    <script src="scripts/vendor.js"></script>
+
+        <script src="scripts/main.js"></script>
+</body>
+</html>
